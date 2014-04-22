@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Rock Paper Scissors</title>
+	<link href='http://fonts.googleapis.com/css?family=Special+Elite' rel='stylesheet' type='text/css'>
+	<link rel="icon" href="favicon.ico" type="image/x-icon"/>
+<style type="text/css">
+	body{
+		font-family: 'Special Elite', cursive;
+		background-color: #E0E0E0 ;
+	}
+	#question_text{
+		font-size: 30px;
+		width:600px;
+		margin:0 auto;
+		position: relative;
+		top:150px;
+		text-align: center;
+	}
+	#guess_box{
+		width:250px;
+		margin: 0 auto;
+		position: relative;
+		top:200px;
+		text-align: center;
+		visibility: visible;
+	}
+	#computerDisplay{
+		width:200px;
+		margin:0 auto;
+		position:relative;
+		top:300px;
+		text-align: center;
+		visibility: visible;
+	}
+	#resultDisplay{
+		width:200px;
+		margin: 0 auto;
+		position: relative;
+		top:350px;
+		text-align: center;
+		visibility: visible;
+	}
+	#submitter:hover{
+		background-color: #008080;
+	}
+	#exiter{
+		display:none;
+	}
+	#exiter:hover{
+		background-color: #008080;
+	}
+	.butty{
+		background-color: #05B8CC;
+		width: 150px;
+		height:25px;
+		border-radius: 5px;
+		border:none;
+		margin:10px auto;
+		font-family: 'Special Elite', cursive;
+		font-size:14px;
+	}
+	#userChoice{
+		visibility: visible;
+	}
+	#score_tally{
+		width:200px;
+		height:200px;
+		position: relative;
+		top:400px;
+		margin: 0 auto;
+		visibility:hidden;
+	}
+	#everything_box{
+		visibility: visible;
+	}
+	#happyPenguin{
+		width:100px;
+		height:250px;
+		position: relative;
+		top:100px;
+		margin:0 auto;
+		display: none;
+	}
+</style>
+</head>
+<body>
+<div id="question_text">Do you choose rock, paper, or scissor?</div>
+<div id = "guess_box">
+	<input type="text" id="userChoice" placeholder="your guess"></input>
+	<button class = "butty" id="submitter">Guess!</button>
+	<button class = "butty" id="exiter">NO</button>
+</div>
+<div id="computerDisplay">I'll pick when you do!</div>
+<div id="resultDisplay"></div>
+<div id="score_tally">
+	Me:
+	<div id="scoreOfComputer"></div>
+	You:
+	<div id="scoreOfUser"></div>
+</div>
+<div id="happyPenguin"><img src="penguin6.png" width="100px"></div>
+</body>
+<script src="script.js"></script>
+</html>
